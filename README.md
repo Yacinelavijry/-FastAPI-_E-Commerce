@@ -1,2 +1,55 @@
-# -FastAPI-_E-Commerce
-A high-performance, asynchronous e-commerce backend API built with FastAPI, Python, and PostgreSQL, featuring scalable system design and automated validation pipelines.
+# 🛒 FastAPI E-Commerce Architecture
+
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+
+A high-performance, asynchronous e-commerce backend built with **FastAPI**. This project serves as a comprehensive showcase of modern backend system design, demonstrating how to build scalable web applications, implement complex algorithmic business logic, and engineer robust automation pipelines.
+
+## 🚀 Key Architectural Highlights
+
+*   **Asynchronous REST APIs:** Engineered lightning-fast endpoints for product management, user authentication, and order processing leveraging FastAPI's async capabilities and Pydantic validation.
+*   **Pipeline Automation:** Implemented end-to-end data validation and automated processing pipelines to ensure high structural stability, clean data ingestion, and zero-defect execution.
+*   **Scalable System Design:** Built with modularity and architectural resilience in mind, utilizing advanced dependency injection, centralized error handling, and optimized relational database schemas.
+*   **Interactive Documentation:** Automatically generated Swagger UI and ReDoc for seamless API integration and developer experience.
+
+## 🛠️ Tech Stack
+
+*   **Framework:** FastAPI (Python)
+*   **Data Validation:** Pydantic
+*   **Database ORM:** SQLAlchemy (Async)
+*   **Database:** PostgreSQL / MySQL 
+*   **Authentication:** OAuth2 with JWT (JSON Web Tokens)
+*   **Automation:** Pre-commit hooks & Data processing pipelines
+
+## ⚙️ Local Setup & Pipeline Execution
+
+Follow these steps to deploy the application and run the internal pipelines locally.
+
+### 1. Clone the Repository
+`git clone https://github.com/GuptaKshitiz/FastAPI-E-Commarce.git`
+`cd FastAPI-E-Commarce`
+
+### 2. Create a Virtual Environment
+`python -m venv venv`
+`source venv/bin/activate`  *(On Windows use `venv\Scripts\activate`)*
+
+### 3. Install Dependencies
+`pip install -r requirements.txt`
+
+### 4. Environment Configuration
+Create a `.env` file in the root directory and configure your database and security pipelines:
+`DATABASE_URL=postgresql+asyncpg://user:password@localhost/dbname`
+`SECRET_KEY=your_super_secret_jwt_key`
+`ACCESS_TOKEN_EXPIRE_MINUTES=30`
+
+### 5. Run the Application
+Execute the backend server using Uvicorn:
+`uvicorn main:app --reload`
+
+## 📖 API Documentation
+
+Once the server is running, the automated API documentation pipelines are available at:
+*   **Swagger UI:** http://127.0.0.1:8000/docs
+*   **ReDoc:** http://127.0.0.1:8000/redoc
