@@ -28,8 +28,7 @@ A high-performance, asynchronous e-commerce backend built with **FastAPI**. This
 Follow these steps to deploy the application and run the internal pipelines locally.
 
 ### 1. Clone the Repository
-`git clone https://github.com/GuptaKshitiz/FastAPI-E-Commarce.git`
-`cd FastAPI-E-Commarce`
+`git clone https://github.com/Yacinelavijry/-FaAPI-_E-Commercest.git`
 
 ### 2. Create a Virtual Environment
 `python -m venv venv`
